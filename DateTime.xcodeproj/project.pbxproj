@@ -82,6 +82,30 @@
 		558306A821C3E58D003E3084 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		558306AA21C3E58E003E3084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		558306AC21C3E58E003E3084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558306BD21C3F735003E3084 /* DateTime20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime20@2x.png"; sourceTree = "<group>"; };
+		558306BE21C3F735003E3084 /* DateTime29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime29@3x.png"; sourceTree = "<group>"; };
+		558306BF21C3F735003E3084 /* DateTime20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime20@3x.png"; sourceTree = "<group>"; };
+		558306C021C3F736003E3084 /* DateTime.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = DateTime.pxm; sourceTree = "<group>"; };
+		558306C121C3F736003E3084 /* DateTime29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime29@2x.png"; sourceTree = "<group>"; };
+		558306C321C3F82A003E3084 /* DateTime40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime40@3x.png"; sourceTree = "<group>"; };
+		558306C421C3F82A003E3084 /* DateTime60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime60@3x.png"; sourceTree = "<group>"; };
+		558306C521C3F82A003E3084 /* DateTime40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime40@2x.png"; sourceTree = "<group>"; };
+		558306C621C3F82B003E3084 /* DateTime60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime60@2x.png"; sourceTree = "<group>"; };
+		558306C721C3F862003E3084 /* DateTime20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateTime20.png; sourceTree = "<group>"; };
+		558306C821C3F883003E3084 /* DateTime29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateTime29.png; sourceTree = "<group>"; };
+		558306C921C3F8EA003E3084 /* DateTime76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateTime76.png; sourceTree = "<group>"; };
+		558306CA21C3F8EA003E3084 /* DateTime76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime76@2x.png"; sourceTree = "<group>"; };
+		558306CB21C3F8EA003E3084 /* DateTime40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateTime40.png; sourceTree = "<group>"; };
+		558306CC21C3F94B003E3084 /* DateTime83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime83.5@2x.png"; sourceTree = "<group>"; };
+		558306CD21C3F978003E3084 /* DateTime1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateTime1024.png; sourceTree = "<group>"; };
+		558306CE21C3FB9C003E3084 /* DateTime86@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime86@2x.png"; sourceTree = "<group>"; };
+		558306CF21C3FB9C003E3084 /* DateTime44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime44@2x.png"; sourceTree = "<group>"; };
+		558306D021C3FB9C003E3084 /* DateTime98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime98@2x.png"; sourceTree = "<group>"; };
+		558306D121C3FB9C003E3084 /* DateTime24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime24@2x.png"; sourceTree = "<group>"; };
+		558306D221C3FB9D003E3084 /* DateTime50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime50@2x.png"; sourceTree = "<group>"; };
+		558306D321C3FB9D003E3084 /* DateTime27.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime27.5@2x.png"; sourceTree = "<group>"; };
+		558306D421C3FBFC003E3084 /* DateTime108@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime108@2x.png"; sourceTree = "<group>"; };
+		558306D521C3FC67003E3084 /* DateTime.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DateTime.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +133,7 @@
 				5583069421C3E58C003E3084 /* DateTime WatchKit App */,
 				558306A321C3E58D003E3084 /* DateTime WatchKit Extension */,
 				5583067F21C3E58B003E3084 /* Products */,
+				558306C221C3F741003E3084 /* Graphics */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +180,37 @@
 				558306AC21C3E58E003E3084 /* Info.plist */,
 			);
 			path = "DateTime WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		558306C221C3F741003E3084 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				558306C021C3F736003E3084 /* DateTime.pxm */,
+				558306D521C3FC67003E3084 /* DateTime.pdf */,
+				558306BD21C3F735003E3084 /* DateTime20@2x.png */,
+				558306BF21C3F735003E3084 /* DateTime20@3x.png */,
+				558306C121C3F736003E3084 /* DateTime29@2x.png */,
+				558306BE21C3F735003E3084 /* DateTime29@3x.png */,
+				558306C521C3F82A003E3084 /* DateTime40@2x.png */,
+				558306C321C3F82A003E3084 /* DateTime40@3x.png */,
+				558306C621C3F82B003E3084 /* DateTime60@2x.png */,
+				558306C421C3F82A003E3084 /* DateTime60@3x.png */,
+				558306C721C3F862003E3084 /* DateTime20.png */,
+				558306C821C3F883003E3084 /* DateTime29.png */,
+				558306CB21C3F8EA003E3084 /* DateTime40.png */,
+				558306C921C3F8EA003E3084 /* DateTime76.png */,
+				558306CA21C3F8EA003E3084 /* DateTime76@2x.png */,
+				558306CC21C3F94B003E3084 /* DateTime83.5@2x.png */,
+				558306CD21C3F978003E3084 /* DateTime1024.png */,
+				558306D121C3FB9C003E3084 /* DateTime24@2x.png */,
+				558306D321C3FB9D003E3084 /* DateTime27.5@2x.png */,
+				558306CF21C3FB9C003E3084 /* DateTime44@2x.png */,
+				558306D221C3FB9D003E3084 /* DateTime50@2x.png */,
+				558306CE21C3FB9C003E3084 /* DateTime86@2x.png */,
+				558306D021C3FB9C003E3084 /* DateTime98@2x.png */,
+				558306D421C3FBFC003E3084 /* DateTime108@2x.png */,
+			);
+			path = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -14,7 +14,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Configuration
     
     func getSupportedTimeTravelDirections(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimeTravelDirections) -> Void) {
-        handler([.forward, .backward])
+        handler([])
     }
     
     func getTimelineStartDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
@@ -33,7 +33,11 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
-        handler(nil)
+        if let template = getComplicationTemplate(for: complication) {
+            let entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+            print("returned CLKComplicationTimelineEntry")
+            handler(entry)
+        }
     }
     
     func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
@@ -50,7 +54,25 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
+        let template = getComplicationTemplate(for: complication)
+        if let t = template {
+            handler(t)
+        }
+    }
+    
+    func getComplicationTemplate(for complication: CLKComplication) -> CLKComplicationTemplate? {
+        switch complication.family {
+        case .circularSmall:
+            let template = CLKComplicationTemplateCircularSmallSimpleText()
+            let df = DateFormatter()
+            df.dateFormat = "d"
+            let d = df.string(from: Date())
+            template.textProvider = CLKSimpleTextProvider(text: d, shortText: d)
+            print("returning template with text \(d)")
+            return template
+        default:
+            return nil
+        }
     }
     
 }
