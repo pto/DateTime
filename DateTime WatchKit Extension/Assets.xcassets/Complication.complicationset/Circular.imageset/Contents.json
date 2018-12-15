@@ -2,27 +2,23 @@
   "images" : [
     {
       "idiom" : "watch",
-      "filename" : "DateTime.pdf",
-      "screen-width" : "<=145",
-      "scale" : "2x"
+      "scale" : "2x",
+      "screen-width" : "<=145"
     },
     {
       "idiom" : "watch",
-      "filename" : "DateTime-1.pdf",
-      "screen-width" : ">161",
-      "scale" : "2x"
+      "scale" : "2x",
+      "screen-width" : ">161"
     },
     {
       "idiom" : "watch",
-      "filename" : "DateTime-2.pdf",
-      "screen-width" : ">145",
-      "scale" : "2x"
+      "scale" : "2x",
+      "screen-width" : ">145"
     },
     {
       "idiom" : "watch",
-      "filename" : "DateTime-3.pdf",
-      "screen-width" : ">183",
-      "scale" : "2x"
+      "scale" : "2x",
+      "screen-width" : ">183"
     }
   ],
   "info" : {

@@ -35,7 +35,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         // Call the handler with the current timeline entry
         if let template = getComplicationTemplate(for: complication) {
             let entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
-            print("returned CLKComplicationTimelineEntry")
             handler(entry)
         }
     }
@@ -68,7 +67,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             df.dateFormat = "d"
             let d = df.string(from: Date())
             template.textProvider = CLKSimpleTextProvider(text: d, shortText: d)
-            print("returning template with text \(d)")
             return template
         default:
             return nil

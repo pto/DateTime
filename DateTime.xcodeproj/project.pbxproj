@@ -105,7 +105,6 @@
 		558306D221C3FB9D003E3084 /* DateTime50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime50@2x.png"; sourceTree = "<group>"; };
 		558306D321C3FB9D003E3084 /* DateTime27.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime27.5@2x.png"; sourceTree = "<group>"; };
 		558306D421C3FBFC003E3084 /* DateTime108@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTime108@2x.png"; sourceTree = "<group>"; };
-		558306D521C3FC67003E3084 /* DateTime.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DateTime.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				558306C021C3F736003E3084 /* DateTime.pxm */,
-				558306D521C3FC67003E3084 /* DateTime.pdf */,
 				558306BD21C3F735003E3084 /* DateTime20@2x.png */,
 				558306BF21C3F735003E3084 /* DateTime20@3x.png */,
 				558306C121C3F736003E3084 /* DateTime29@2x.png */,
@@ -615,7 +613,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.pto.DateTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -633,7 +631,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.pto.DateTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
