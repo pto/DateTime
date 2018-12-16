@@ -12,12 +12,11 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: Date(), userInfo: nil) {_ in return}
     }
 
     func applicationDidBecomeActive() {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-        let server = CLKComplicationServer.sharedInstance()
-        server.activeComplications?.forEach(server.reloadTimeline)
     }
 
     func applicationWillResignActive() {
@@ -32,6 +31,11 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             switch task {
             case let backgroundTask as WKApplicationRefreshBackgroundTask:
                 // Be sure to complete the background task once you’re done.
+                let server = CLKComplicationServer.sharedInstance()
+                server.activeComplications?.forEach(server.reloadTimeline)
+                if let tomorrow = Calendar.current.nextDate(after: Date(), matching: DateComponents(hour:0), matchingPolicy: .nextTime) {
+                    WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: tomorrow, userInfo: nil) {_ in return}
+                }
                 backgroundTask.setTaskCompletedWithSnapshot(false)
             case let snapshotTask as WKSnapshotRefreshBackgroundTask:
                 // Snapshot tasks have a unique completion call, make sure to set your expiration date
