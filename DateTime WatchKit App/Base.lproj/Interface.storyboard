@@ -16,12 +16,12 @@
                     <items>
                         <dateLabel alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="4" id="l3b-uk-0In">
                             <color key="textColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
-                            <string key="format">EEEE'
-' MMM d'
-' HH:mm:ss</string>
-                            <date key="previewedDate" timeIntervalSinceReferenceDate="570112965">
-                                <!--2019-01-25 12:42:45 +0000-->
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                            <string key="format">EEE'
+'MMM d'
+'HH:mm:ss</string>
+                            <date key="previewedDate" timeIntervalSinceReferenceDate="569940165">
+                                <!--2019-01-23 12:42:45 +0000-->
                             </date>
                         </dateLabel>
                     </items>
