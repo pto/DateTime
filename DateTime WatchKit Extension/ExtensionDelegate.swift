@@ -33,8 +33,8 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
                 // Be sure to complete the background task once you’re done.
                 let server = CLKComplicationServer.sharedInstance()
                 server.activeComplications?.forEach(server.reloadTimeline)
-                if let tomorrow = Calendar.current.nextDate(after: Date(), matching: DateComponents(hour:0), matchingPolicy: .nextTime) {
-                    WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: tomorrow, userInfo: nil) {_ in return}
+                if let nextHour = Calendar.current.nextDate(after: Date(), matching: DateComponents(minute:0), matchingPolicy: .nextTime) {
+                    WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: nextHour, userInfo: nil) {_ in return}
                 }
                 backgroundTask.setTaskCompletedWithSnapshot(false)
             case let snapshotTask as WKSnapshotRefreshBackgroundTask:
