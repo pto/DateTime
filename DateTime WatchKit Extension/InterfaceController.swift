@@ -9,12 +9,12 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var trace: WKInterfaceLabel!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
         // Configure interface objects here.
     }
     
